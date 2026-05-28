@@ -147,8 +147,8 @@
 
   /* Link buttons */
   .card-links {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 8px;
   }
   .card-links a {
@@ -203,6 +203,7 @@
     .header h1 { font-size: 26px; }
     .grid { grid-template-columns: 1fr; }
     .skill-card { padding: 22px; }
+    .card-links { grid-template-columns: repeat(2, 1fr); }
     .stats { gap: 20px; }
   }
 </style>
