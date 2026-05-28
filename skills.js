@@ -20,7 +20,7 @@ const skills = [
     links: [
       { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/skill/tencent-ima-copilot-legal-consultation", icon: "fab fa-github" },
       { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/tencent-ima-copilot-legal-consultation", icon: "fas fa-code-branch" },
-      { platform: "IMA Skill", url: "https://ima.qq.com/skill?shareId=ba51a2197c4f4e1fabd93a12a1ddc243&from=share", icon: "fas fa-link" },
+      { platform: "IMA", url: "https://ima.qq.com/skill?shareId=ba51a2197c4f4e1fabd93a12a1ddc243&from=share", icon: "fas fa-link" },
       { platform: "SkillHub", url: "https://skillhub.cn/skills/tencent-ima-copilot-legal-consultation", icon: "fas fa-globe" }
     ]
   },
@@ -32,7 +32,7 @@ const skills = [
     links: [
       { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/skill/claw-agent-workspace", icon: "fab fa-github" },
       { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/claw-agent-workspace", icon: "fas fa-code-branch" },
-      { platform: "IMA Skill", url: "https://ima.qq.com/skill?shareId=df0a8dc15b744566b0299c5924c82b76&from=share", icon: "fas fa-link" },
+      { platform: "IMA", url: "https://ima.qq.com/skill?shareId=df0a8dc15b744566b0299c5924c82b76&from=share", icon: "fas fa-link" },
       { platform: "SkillHub", url: "https://skillhub.cn/skills/claw-agent-workspace", icon: "fas fa-globe" }
     ]
   }
