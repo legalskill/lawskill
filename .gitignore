@@ -3,3 +3,4 @@ token/
 .env
 *.log
 .DS_Store
+.vercel
