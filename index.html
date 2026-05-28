@@ -174,6 +174,18 @@
     font-size: 13px;
   }
 
+  /* Two-rows layout for IMA card */
+  .card-links.two-rows {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .card-links.two-rows a:nth-child(1),
+  .card-links.two-rows a:nth-child(2) {
+    grid-column: span 3;
+  }
+  .card-links.two-rows a:nth-child(n+3) {
+    grid-column: span 2;
+  }
+
   /* Footer */
   .footer {
     text-align: center;
@@ -266,6 +278,8 @@
       `<a href="${l.url}" target="_blank" rel="noopener"><i class="${l.icon}"></i> ${l.platform}</a>`
     ).join('');
 
+    const layoutClass = skill.layout ? ` ${skill.layout}` : '';
+
     card.innerHTML = `
       <div class="card-header">
         <div class="card-icon ${iconClass}">${iconChar}</div>
@@ -275,7 +289,7 @@
         </div>
       </div>
       <p class="card-desc">${skill.desc}</p>
-      <div class="card-links">${linksHTML}</div>
+      <div class="card-links${layoutClass}">${linksHTML}</div>
     `;
 
     grid.appendChild(card);
