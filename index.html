@@ -255,13 +255,15 @@
     // Count links for stats
     totalLinks += skill.links.length;
 
-    // Card icon (first letter or emoji for law)
+    // Card icon
     let iconChar;
-    if (skill.code.indexOf('legal') !== -1) iconChar = '⚖';
+    if (skill.code === 'ima-knowledge-bases') iconChar = '📚';
+    else if (skill.code.indexOf('legal') !== -1) iconChar = '⚖';
     else if (skill.code.indexOf('claw') !== -1) iconChar = '🤖';
     else iconChar = skill.name.charAt(0);
 
     const iconClass = icons[i % icons.length];
+    const versionBadge = skill.version ? `<span class="card-version">${skill.version}</span>` : '';
 
     // Build links HTML
     const linksHTML = skill.links.map(l =>
@@ -273,7 +275,7 @@
         <div class="card-icon ${iconClass}">${iconChar}</div>
         <div>
           <span class="card-title">${skill.name}</span>
-          <span class="card-version">${skill.version}</span>
+          ${versionBadge}
         </div>
       </div>
       <p class="card-desc">${skill.desc}</p>
