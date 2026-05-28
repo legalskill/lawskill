@@ -2,6 +2,7 @@ const skills = [
   {
     name: "IMA 知识库",
     code: "ima-knowledge-bases",
+    route: "ima",
     icon: "images/ima.jpg",
     layout: "two-rows",
     desc: "基于腾讯 ima.copilot 构建的法律知识库矩阵——法律检索、案例查证、法规核验一站直达，每个知识库即开即用。",
@@ -16,6 +17,7 @@ const skills = [
   {
     name: "法律咨询技能",
     code: "tencent-ima-copilot-legal-consultation",
+    route: "legal",
     icon: "images/ima.jpg",
     version: "v1.1.1",
     desc: "资深律师式法律咨询，深度适配 ima.copilot 知识库 RAG，五阶段分步诊断，法条与案例均可溯源验证。Senior-level legal consultation with RAG-enhanced diagnosis across five stages.",
@@ -29,6 +31,7 @@ const skills = [
   {
     name: "Claw 智能体引导",
     code: "claw-agent-workspace",
+    route: "qclaw",
     icon: "images/qclaw.jpg",
     version: "v1.1.0",
     desc: "Claw 智能体工作区引导管理，自动扫描技能目录生成动态路由，注入 AGENTS.md、SOUL.md 等引导文件，支持多技能注册与外部技能路径。",
@@ -42,6 +45,7 @@ const skills = [
   {
     name: "WorkBuddy 法律咨询专家",
     code: "workbuddy-imacopilot",
+    route: "workbuddy",
     icon: "images/workbuddy.jpg",
     version: "v1.0.0",
     desc: "WorkBuddy 专用法律咨询 Agent，绑定 tencent-ima-copilot-legal-consultation 技能，五阶段分步诊断，法条与案例均可溯源验证。即装即用，嵌入工作台。",

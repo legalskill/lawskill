@@ -97,13 +97,18 @@
     padding: 28px;
     box-shadow: var(--shadow);
     border: 1px solid var(--border);
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.3s ease;
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 24px;
   }
   .skill-card:hover {
     box-shadow: var(--shadow-hover);
     transform: translateY(-2px);
+  }
+  .skill-card.highlight {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
   }
   .skill-card .card-header {
     display: flex;
@@ -274,6 +279,7 @@
   skills.forEach((skill, i) => {
     const card = document.createElement('div');
     card.className = 'skill-card';
+    if (skill.route) card.id = 'card-' + skill.route;
 
     // Count links for stats
     totalLinks += skill.links.length;
@@ -319,6 +325,17 @@
   // Update stats
   document.getElementById('skillCount').textContent = skills.length;
   document.getElementById('linkCount').textContent = totalLinks;
+
+  // Route-based navigation: /qclaw → scroll to Claw card
+  (function() {
+    var path = window.location.pathname.replace(/\/+$/, '').replace(/^\/+/, '');
+    if (!path) return;
+    var target = document.getElementById('card-' + path);
+    if (target) {
+      target.classList.add('highlight');
+      setTimeout(function() { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100);
+    }
+  })();
 })();
 </script>
 

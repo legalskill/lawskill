@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/((?!index\\.html|skills\\.js|images/|favicon\\.ico).*)", "destination": "/index.html" }
+  ]
+}
