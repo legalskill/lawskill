@@ -32,6 +32,7 @@ const skills = [
     links: [
       { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/skill/claw-agent-workspace", icon: "fab fa-github" },
       { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/claw-agent-workspace", icon: "fas fa-code-branch" },
+      { platform: "SkillHub", url: "https://skillhub.cn/skills/claw-agent-workspace", icon: "fas fa-globe" },
       { platform: "Qclaw / OpenClaw", url: "#", icon: "fas fa-terminal" }
     ]
   }
