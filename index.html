@@ -326,16 +326,6 @@
   document.getElementById('skillCount').textContent = skills.length;
   document.getElementById('linkCount').textContent = totalLinks;
 
-  // Route-based navigation: /qclaw → scroll to Claw card
-  (function() {
-    var path = window.location.pathname.replace(/\/+$/, '').replace(/^\/+/, '');
-    if (!path) return;
-    var target = document.getElementById('card-' + path);
-    if (target) {
-      target.classList.add('highlight');
-      setTimeout(function() { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100);
-    }
-  })();
 })();
 </script>
 

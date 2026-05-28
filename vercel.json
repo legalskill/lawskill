@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/((?!index\\.html|skills\\.js|images/|favicon\\.ico).*)", "destination": "/index.html" }
+  "redirects": [
+    { "source": "/qclaw", "destination": "https://skillhub.cn/skills/claw-agent-workspace", "permanent": true },
+    { "source": "/claw", "destination": "https://skillhub.cn/skills/claw-agent-workspace", "permanent": true },
+    { "source": "/ima", "destination": "https://skillhub.cn/skills/tencent-ima-copilot-legal-consultation", "permanent": true },
+    { "source": "/workbuddy", "destination": "https://github.com/legalskill/legalskill/tree/main/workbuddy/workbuddy-ima-copilot-legal-consultation", "permanent": true },
+    { "source": "/buddy", "destination": "https://github.com/legalskill/legalskill/tree/main/workbuddy/workbuddy-ima-copilot-legal-consultation", "permanent": true }
   ]
 }
