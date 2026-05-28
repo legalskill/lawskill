@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>孙律师 · 个人技能聚合</title>
+<meta name="description" content="孙律师维护的法律 AI 技能集合——法律咨询、智能体引导等实战工具。">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --card-bg: #ffffff;
+    --text: #1d1d1f;
+    --text-secondary: #6e6e73;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --border: #e5e5ea;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+    --shadow-hover: 0 2px 8px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06);
+    --radius: 16px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .header .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+  .header p {
+    font-size: 17px;
+    color: var(--text-secondary);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* Stats bar */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat .num {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .stat .label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+  }
+
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: 24px;
+  }
+
+  /* Card */
+  .skill-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+  }
+  .skill-card .card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .skill-card .card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .skill-card .card-title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .skill-card .card-version {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--bg);
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+  .skill-card .card-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  /* Link buttons */
+  .card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .card-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+  }
+  .card-links a:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .card-links a i {
+    font-size: 13px;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Color themes per card */
+  .icon-blue   { background: linear-gradient(135deg, #2563eb, #3b82f6); }
+  .icon-purple { background: linear-gradient(135deg, #7c3aed, #8b5cf6); }
+  .icon-green  { background: linear-gradient(135deg, #059669, #10b981); }
+  .icon-orange { background: linear-gradient(135deg, #ea580c, #f97316); }
+
+  /* Responsive */
+  @media (max-width: 520px) {
+    .container { padding: 40px 16px 60px; }
+    .header h1 { font-size: 26px; }
+    .grid { grid-template-columns: 1fr; }
+    .skill-card { padding: 22px; }
+    .stats { gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="avatar">⚖️</div>
+    <h1>孙律师 · 个人技能聚合</h1>
+    <p>精选法律 AI 技能，服务于律师实战场景。<br>来自 <a href="https://github.com/legalskill" style="color:var(--accent);text-decoration:none;">律锥·legalskill</a> 开源社区。</p>
+  </header>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat"><div class="num" id="skillCount">-</div><div class="label">技能</div></div>
+    <div class="stat"><div class="num" id="linkCount">-</div><div class="label">平台入口</div></div>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="grid" id="cards"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 律锥·legalskill · <a href="https://www.legalskill.cn">legalskill.cn</a> · <a href="https://github.com/legalskill">GitHub</a></p>
+    <p style="margin-top:4px;">锥处囊中，脱颖而出 · 陪伴法律人走稳 AI 时代的执业之路</p>
+  </footer>
+
+</div>
+
+<script src="skills.js"></script>
+<script>
+(function() {
+  const icons = ['icon-blue', 'icon-purple', 'icon-green', 'icon-orange'];
+  const grid = document.getElementById('cards');
+
+  let totalLinks = 0;
+
+  skills.forEach((skill, i) => {
+    const card = document.createElement('div');
+    card.className = 'skill-card';
+
+    // Count links for stats
+    totalLinks += skill.links.length;
+
+    // Card icon (first letter or emoji for law)
+    let iconChar;
+    if (skill.code.indexOf('legal') !== -1) iconChar = '⚖';
+    else if (skill.code.indexOf('claw') !== -1) iconChar = '🤖';
+    else iconChar = skill.name.charAt(0);
+
+    const iconClass = icons[i % icons.length];
+
+    // Build links HTML
+    const linksHTML = skill.links.map(l =>
+      `<a href="${l.url}" target="_blank" rel="noopener"><i class="${l.icon}"></i> ${l.platform}</a>`
+    ).join('');
+
+    card.innerHTML = `
+      <div class="card-header">
+        <div class="card-icon ${iconClass}">${iconChar}</div>
+        <div>
+          <span class="card-title">${skill.name}</span>
+          <span class="card-version">${skill.version}</span>
+        </div>
+      </div>
+      <p class="card-desc">${skill.desc}</p>
+      <div class="card-links">${linksHTML}</div>
+    `;
+
+    grid.appendChild(card);
+  });
+
+  // Update stats
+  document.getElementById('skillCount').textContent = skills.length;
+  document.getElementById('linkCount').textContent = totalLinks;
+})();
+</script>
+
+</body>
+</html>
