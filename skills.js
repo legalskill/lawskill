@@ -19,7 +19,8 @@ const skills = [
     links: [
       { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/skill/tencent-ima-copilot-legal-consultation", icon: "fab fa-github" },
       { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/tencent-ima-copilot-legal-consultation", icon: "fas fa-code-branch" },
-      { platform: "ima.copilot", url: "https://ima.qq.com/wiki/?shareId=8138fdfd3f6c571966e2433946f437f8f8814548b738a2cd8ca9a80b7aed177c", icon: "fas fa-link" }
+      { platform: "IMA Skill", url: "https://ima.qq.com/skill?shareId=ba51a2197c4f4e1fabd93a12a1ddc243&from=share", icon: "fas fa-link" },
+      { platform: "知识库", url: "https://ima.qq.com/wiki/?shareId=8138fdfd3f6c571966e2433946f437f8f8814548b738a2cd8ca9a80b7aed177c", icon: "fas fa-database" }
     ]
   },
   {
