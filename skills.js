@@ -2,6 +2,7 @@ const skills = [
   {
     name: "IMA 知识库",
     code: "ima-knowledge-bases",
+    icon: "images/ima.jpg",
     layout: "two-rows",
     desc: "基于腾讯 ima.copilot 构建的法律知识库矩阵——法律检索、案例查证、法规核验一站直达，每个知识库即开即用。",
     links: [
@@ -13,8 +14,9 @@ const skills = [
     ]
   },
   {
-    name: "法律咨询 · Legal Consultation",
+    name: "法律咨询技能",
     code: "tencent-ima-copilot-legal-consultation",
+    icon: "images/ima.jpg",
     version: "v1.1.1",
     desc: "资深律师式法律咨询，深度适配 ima.copilot 知识库 RAG，五阶段分步诊断，法条与案例均可溯源验证。Senior-level legal consultation with RAG-enhanced diagnosis across five stages.",
     links: [
@@ -27,6 +29,7 @@ const skills = [
   {
     name: "Claw 智能体引导",
     code: "claw-agent-workspace",
+    icon: "images/qclaw.jpg",
     version: "v1.1.0",
     desc: "Claw 智能体工作区引导管理，自动扫描技能目录生成动态路由，注入 AGENTS.md、SOUL.md 等引导文件，支持多技能注册与外部技能路径。",
     links: [
@@ -34,6 +37,19 @@ const skills = [
       { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/claw-agent-workspace", icon: "fas fa-code-branch" },
       { platform: "IMA", url: "https://ima.qq.com/skill?shareId=df0a8dc15b744566b0299c5924c82b76&from=share", icon: "fas fa-link" },
       { platform: "SkillHub", url: "https://skillhub.cn/skills/claw-agent-workspace", icon: "fas fa-globe" }
+    ]
+  },
+  {
+    name: "WorkBuddy 法律咨询专家",
+    code: "workbuddy-imacopilot",
+    icon: "images/workbuddy.jpg",
+    version: "v1.0.0",
+    desc: "WorkBuddy 专用法律咨询 Agent，绑定 tencent-ima-copilot-legal-consultation 技能，五阶段分步诊断，法条与案例均可溯源验证。即装即用，嵌入工作台。",
+    links: [
+      { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/workbuddy/workbuddy-ima-copilot-legal-consultation", icon: "fab fa-github" },
+      { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/workbuddy/workbuddy-ima-copilot-legal-consultation", icon: "fas fa-code-branch" },
+      { platform: "IMA", url: "https://ima.qq.com/wiki/?shareId=8138fdfd3f6c571966e2433946f437f8f8814548b738a2cd8ca9a80b7aed177c", icon: "fas fa-link" },
+      { platform: "安装说明", url: "https://github.com/legalskill/legalskill/blob/main/workbuddy/workbuddy-ima-copilot-legal-consultation/安装说明.md", icon: "fas fa-book" }
     ]
   }
 ];

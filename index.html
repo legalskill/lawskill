@@ -121,6 +121,13 @@
     font-size: 22px;
     color: #fff;
     flex-shrink: 0;
+    overflow: hidden;
+  }
+  .skill-card .card-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
   }
   .skill-card .card-title {
     font-size: 19px;
@@ -274,12 +281,18 @@
     // Card icon
     let iconChar;
     if (skill.code === 'ima-knowledge-bases') iconChar = '📚';
+    else if (skill.code.indexOf('workbuddy') !== -1) iconChar = '🧠';
     else if (skill.code.indexOf('legal') !== -1) iconChar = '⚖';
     else if (skill.code.indexOf('claw') !== -1) iconChar = '🤖';
     else iconChar = skill.name.charAt(0);
 
     const iconClass = icons[i % icons.length];
     const versionBadge = skill.version ? `<span class="card-version">${skill.version}</span>` : '';
+
+    // Card icon: use image if skill.icon is set, otherwise use emoji
+    const iconHTML = skill.icon
+      ? `<img src="${skill.icon}" alt="${skill.name}">`
+      : iconChar;
 
     // Build links HTML
     const linksHTML = skill.links.map(l =>
@@ -290,7 +303,7 @@
 
     card.innerHTML = `
       <div class="card-header">
-        <div class="card-icon ${iconClass}">${iconChar}</div>
+        <div class="card-icon ${iconClass}">${iconHTML}</div>
         <div>
           <span class="card-title">${skill.name}</span>
           ${versionBadge}
