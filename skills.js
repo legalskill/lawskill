@@ -5,7 +5,7 @@ const skills = [
     route: "ima",
     icon: "images/ima.jpg",
     layout: "two-rows",
-    desc: "基于腾讯 ima.copilot 构建的法律知识库矩阵——法律检索、案例查证、法规核验一站直达，每个知识库即开即用。",
+    desc: "基于腾讯 ima.copilot 构建的法律知识库矩阵——法律检索、案例查证、法规核验一站直达，每个知识库即开即用，点击下方按钮订阅。",
     links: [
       { platform: "法律技能知识库", url: "https://ima.qq.com/wiki/?shareId=8138fdfd3f6c571966e2433946f437f8f8814548b738a2cd8ca9a80b7aed177c", icon: "fas fa-book" },
       { platform: "律锥·法律官方信源库", url: "https://ima.qq.com/wiki/?shareId=0453dc2e58a535b35cea1a76c85a730362ecb95570c17f2de7cfa2b20c1c70b0", icon: "fas fa-building-columns" },
@@ -26,6 +26,10 @@ const skills = [
       { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/tencent-ima-copilot-legal-consultation", icon: "fas fa-code-branch" },
       { platform: "IMA", url: "https://ima.qq.com/skill?shareId=ba51a2197c4f4e1fabd93a12a1ddc243&from=share", icon: "fas fa-link" },
       { platform: "SkillHub", url: "https://skillhub.cn/skills/tencent-ima-copilot-legal-consultation", icon: "fas fa-globe" }
+    ],
+    download: [
+      { label: "国际下载ZIP", url: "https://github.com/legalskill/legalskill/releases/download/latest/tencent-ima-copilot-legal-consultation.zip" },
+      { label: "国内下载ZIP", url: "https://gitee.com/legalskill/legalskill/releases/latest" }
     ]
   },
   {
@@ -40,6 +44,10 @@ const skills = [
       { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/claw-agent-workspace", icon: "fas fa-code-branch" },
       { platform: "IMA", url: "https://ima.qq.com/skill?shareId=df0a8dc15b744566b0299c5924c82b76&from=share", icon: "fas fa-link" },
       { platform: "SkillHub", url: "https://skillhub.cn/skills/claw-agent-workspace", icon: "fas fa-globe" }
+    ],
+    download: [
+      { label: "国际下载ZIP", url: "https://github.com/legalskill/legalskill/releases/download/latest/claw-agent-workspace.zip" },
+      { label: "国内下载ZIP", url: "https://gitee.com/legalskill/legalskill/releases/latest" }
     ]
   },
   {
@@ -53,7 +61,28 @@ const skills = [
       { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/workbuddy/workbuddy-ima-copilot-legal-consultation", icon: "fab fa-github" },
       { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/workbuddy/workbuddy-ima-copilot-legal-consultation", icon: "fas fa-code-branch" },
       { platform: "IMA", url: "https://ima.qq.com/wiki/?shareId=8138fdfd3f6c571966e2433946f437f8f8814548b738a2cd8ca9a80b7aed177c", icon: "fas fa-link" },
-      { platform: "安装说明", url: "https://github.com/legalskill/legalskill/blob/main/workbuddy/workbuddy-ima-copilot-legal-consultation/安装说明.md", icon: "fas fa-book" }
+      { platform: "说明", url: "https://github.com/legalskill/legalskill/blob/main/workbuddy/workbuddy-ima-copilot-legal-consultation/安装说明.md", icon: "fas fa-book" }
+    ],
+    download: [
+      { label: "国际下载ZIP", url: "https://github.com/legalskill/legalskill/releases/download/latest/workbuddy-ima-copilot-legal-consultation.zip" },
+      { label: "国内下载ZIP", url: "https://gitee.com/legalskill/legalskill/releases/latest" }
+    ]
+  },
+  {
+    name: "高考志愿快速填报",
+    code: "gaokao-quick-advisor",
+    route: "gaokao",
+    version: "v1.0.0",
+    desc: "输入分数+省份+选科，立刻给出冲/稳/保三档学校推荐和录取概率。全国31省覆盖，数据来自官方一分一段表，永久免费。",
+    links: [
+      { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/skill/gaokao-quick-advisor", icon: "fab fa-github" },
+      { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/gaokao-quick-advisor", icon: "fas fa-code-branch" },
+      { platform: "IMA", url: "https://ima.qq.com/skill?shareId=4a6db4b5e9ec4604a57b9fd5f2205037&from=share", icon: "fas fa-link" },
+      { platform: "SkillHub", url: "https://skillhub.cn/skills/gaokao-quick-advisor", icon: "fas fa-globe" }
+    ],
+    download: [
+      { label: "国际下载ZIP", url: "https://github.com/legalskill/legalskill/releases/download/latest/gaokao-quick-advisor.zip" },
+      { label: "国内下载ZIP", url: "https://gitee.com/legalskill/legalskill/releases/latest" }
     ]
   }
 ];
