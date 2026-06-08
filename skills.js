@@ -16,19 +16,19 @@ const skills = [
   },
   {
     name: "法律咨询技能",
-    code: "tencent-ima-copilot-legal-consultation",
+    code: "legal-consultation",
     route: "legal",
     icon: "images/ima.jpg",
-    version: "v1.1.1",
-    desc: "资深律师式法律咨询，深度适配 ima.copilot 知识库 RAG，五阶段分步诊断，法条与案例均可溯源验证。Senior-level legal consultation with RAG-enhanced diagnosis across five stages.",
+    version: "v2.0.0",
+    desc: "资深律师式法律咨询，三层环境智能感知（IMA原生/MCP桥接/无桥接），五阶段分步诊断+搜索门禁，法条与案例均可溯源验证。Senior-level legal consultation with 3-tier env detection and RAG-enhanced diagnosis.",
     links: [
-      { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/skill/tencent-ima-copilot-legal-consultation", icon: "fab fa-github" },
-      { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/tencent-ima-copilot-legal-consultation", icon: "fas fa-code-branch" },
+      { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/skill/legal-consultation", icon: "fab fa-github" },
+      { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/legal-consultation", icon: "fas fa-code-branch" },
       { platform: "IMA", url: "https://ima.qq.com/skill?shareId=ba51a2197c4f4e1fabd93a12a1ddc243&from=share", icon: "fas fa-link" },
-      { platform: "SkillHub", url: "https://skillhub.cn/skills/tencent-ima-copilot-legal-consultation", icon: "fas fa-globe" }
+      { platform: "SkillHub", url: "https://skillhub.cn/skills/legal-consultation", icon: "fas fa-globe" }
     ],
     download: [
-      { label: "国际下载ZIP", url: "https://github.com/legalskill/legalskill/releases/download/latest/tencent-ima-copilot-legal-consultation.zip" },
+      { label: "国际下载ZIP", url: "https://github.com/legalskill/legalskill/releases/download/latest/legal-consultation.zip" },
       { label: "国内下载ZIP", url: "https://gitee.com/legalskill/legalskill/releases/latest" }
     ]
   },
