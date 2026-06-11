@@ -33,24 +33,6 @@ const skills = [
     ]
   },
   {
-    name: "WorkBuddy 法律咨询专家",
-    code: "legalskill-legal-consultation",
-    route: "workbuddy",
-    icon: "images/workbuddy.jpg",
-    version: "v2.0.0",
-    desc: "进阶Agent架构，三层环境智能感知，五阶段分步诊断+搜索门禁+41项反幻觉核查。Skill-first设计，同时兼容独立使用与WorkBuddy嵌入。",
-    links: [
-      { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/skill/legalskill-legal-consultation", icon: "fab fa-github" },
-      { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/legalskill-legal-consultation", icon: "fas fa-code-branch" },
-      { platform: "IMA", url: "https://ima.qq.com/skill?shareId=ba51a2197c4f4e1fabd93a12a1ddc243&from=share", icon: "fas fa-link" },
-      { platform: "SkillHub", url: "https://skillhub.cn/skills/legalskill-legal-consultation", icon: "fas fa-globe" }
-    ],
-    download: [
-      { label: "国际下载ZIP", url: "https://github.com/legalskill/legalskill/releases/download/latest/legalskill-legal-consultation.zip" },
-      { label: "国内下载ZIP", url: "https://gitee.com/legalskill/legalskill/releases/latest" }
-    ]
-  },
-  {
     name: "Claw 智能体引导",
     code: "claw-agent-workspace",
     route: "qclaw",
@@ -65,6 +47,24 @@ const skills = [
     ],
     download: [
       { label: "国际下载ZIP", url: "https://github.com/legalskill/legalskill/releases/download/latest/claw-agent-workspace.zip" },
+      { label: "国内下载ZIP", url: "https://gitee.com/legalskill/legalskill/releases/latest" }
+    ]
+  },
+  {
+    name: "WorkBuddy 法律咨询专家",
+    code: "legalskill-legal-consultation",
+    route: "workbuddy",
+    icon: "images/workbuddy.jpg",
+    version: "v2.0.0",
+    desc: "进阶Agent架构，三层环境智能感知，五阶段分步诊断+搜索门禁+41项反幻觉核查。Skill-first设计，同时兼容独立使用与WorkBuddy嵌入。",
+    links: [
+      { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/skill/legalskill-legal-consultation", icon: "fab fa-github" },
+      { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/legalskill-legal-consultation", icon: "fas fa-code-branch" },
+      { platform: "IMA", url: "https://ima.qq.com/skill?shareId=bee46e4920884dc396ff15ac8604feb1&from=share", icon: "fas fa-link" },
+      { platform: "SkillHub", url: "https://skillhub.cn/skills/legalskill-legal-consultation", icon: "fas fa-globe" }
+    ],
+    download: [
+      { label: "国际下载ZIP", url: "https://github.com/legalskill/legalskill/releases/download/latest/legalskill-legal-consultation.zip" },
       { label: "国内下载ZIP", url: "https://gitee.com/legalskill/legalskill/releases/latest" }
     ]
   },
