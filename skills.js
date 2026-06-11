@@ -36,7 +36,7 @@ const skills = [
     name: "WorkBuddy 法律咨询专家",
     code: "legalskill-legal-consultation",
     route: "workbuddy",
-    icon: "images/ima.jpg",
+    icon: "images/workbuddy.jpg",
     version: "v2.0.0",
     desc: "进阶Agent架构，三层环境智能感知，五阶段分步诊断+搜索门禁+41项反幻觉核查。Skill-first设计，同时兼容独立使用与WorkBuddy嵌入。",
     links: [
