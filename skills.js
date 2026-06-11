@@ -15,7 +15,7 @@ const skills = [
     ]
   },
   {
-    name: "法律咨询技能",
+    name: "IMA法律咨询技能",
     code: "tencent-ima-copilot-legal-consultation",
     route: "legal",
     icon: "images/ima.jpg",
