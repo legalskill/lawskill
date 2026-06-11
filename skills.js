@@ -51,24 +51,6 @@ const skills = [
     ]
   },
   {
-    name: "WorkBuddy 法律咨询专家",
-    code: "workbuddy-imacopilot",
-    route: "workbuddy",
-    icon: "images/workbuddy.jpg",
-    version: "v1.0.0",
-    desc: "WorkBuddy 专用法律咨询 Agent，绑定 tencent-ima-copilot-legal-consultation 技能，五阶段分步诊断，法条与案例均可溯源验证。即装即用，嵌入工作台。",
-    links: [
-      { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/workbuddy/workbuddy-ima-copilot-legal-consultation", icon: "fab fa-github" },
-      { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/workbuddy/workbuddy-ima-copilot-legal-consultation", icon: "fas fa-code-branch" },
-      { platform: "IMA", url: "https://ima.qq.com/wiki/?shareId=8138fdfd3f6c571966e2433946f437f8f8814548b738a2cd8ca9a80b7aed177c", icon: "fas fa-link" },
-      { platform: "说明", url: "https://github.com/legalskill/legalskill/blob/main/workbuddy/workbuddy-ima-copilot-legal-consultation/安装说明.md", icon: "fas fa-book" }
-    ],
-    download: [
-      { label: "国际下载ZIP", url: "https://github.com/legalskill/legalskill/releases/download/latest/workbuddy-ima-copilot-legal-consultation.zip" },
-      { label: "国内下载ZIP", url: "https://gitee.com/legalskill/legalskill/releases/latest" }
-    ]
-  },
-  {
     name: "高考志愿快速填报",
     code: "gaokao-quick-advisor",
     route: "gaokao",
