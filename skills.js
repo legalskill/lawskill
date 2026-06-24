@@ -73,7 +73,7 @@ const skills = [
     code: "gaokao-quick-advisor",
     route: "gaokao",
     version: "v1.0.0",
-    desc: "输入分数+省份+选科，立刻给出冲/稳/保三档学校推荐和录取概率。全国31省覆盖，数据来自官方一分一段表，永久免费。",
+    desc: "输入分数+省份+选科，立刻给出冲/稳/保三档学校推荐和录取概率。全国31省覆盖，数据来自官方一分一段表，河北已更新2026年考生数据，永久免费。",
     links: [
       { platform: "GitHub", url: "https://github.com/legalskill/legalskill/tree/main/skill/gaokao-quick-advisor", icon: "fab fa-github" },
       { platform: "Gitee", url: "https://gitee.com/legalskill/legalskill/tree/main/skill/gaokao-quick-advisor", icon: "fas fa-code-branch" },
